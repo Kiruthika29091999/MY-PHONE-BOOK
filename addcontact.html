@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<body background="contactusimage.jpg">
+<script>
+function show(){
+var name=document.frm.name;
+var email=document.frm.email;
+var phone number=document.frm.website;
+var msg=gocument.frm.msg;
+if(name.value==""){
+ alert("please enter first name");
+ fn.focus();
+ }
+else if(email.value==""){
+ alert("please enter email");
+ fn.focus();
+ }  
+else if(phoneenumber.value==""){
+	 alert("please enter email");
+	 fn.focus();
+	 } 
+else if(website.value==""){
+	 alert("please enter email");
+	 fn.focus();
+	 } 
+else if(msg.value==""){
+	 alert("please enter email");
+	 fn.focus();
+	 } 
+else{
+	document.getelementById("contact").innerHTML=name+" "+email+" "+phonenumber+" ;"
+	}
+}
+</script>
+</head>
+<body>
+<div class="container">  
+  <form id="contact" action="" method="get">
+    <h3>ADD NEW</h3>
+    <h4>Contact us today, and get reply with in 24 hours!</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+       </fieldset>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel"tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Another Number" type="tel"tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Your Designation" tabindex="2" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="show" type="SAVE" id="contact-SAVE" data-save="...Sending">Save</button>
+      <a href="listed.html">
+    </fieldset>
+      <button name="show" type="DELETE" id="contact-DELETE" data-save="...Sending">Delete</button>
+      <a href="listed.html">
+    </fieldset>
+    <form>
+ <a href="newpage.html"><input type="button" value="Go back!" onclick="show()"</a>
+ 
+</form>
+ </form> 
+ 
+  
+</div>
+</body>
